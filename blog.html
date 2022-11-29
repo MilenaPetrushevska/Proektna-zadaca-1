@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>Блог</title>
+<meta name="viewport" content="width=device-width">
+<link rel = "stylesheet" href ="blog.css">
+</head>
+<body>
+    <div class="navbar">
+      <a href="home.html">Дома</a>
+        <a href="bio.html">За мене</a>
+        <div class="dropdown">
+          <button class="dropbtn">Интереси 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="moda.html">Мода и моден дизајн</a>
+            <a href="dek.html">Декорации</a>
+            <a href="hrana.html">Храна и пијалоци</a>
+          </div>
+        </div>
+        <a href="galerija.html">Галерија</a>
+        <a href="blog.html">Блог</a>
+        <a href="anketa.html">Анкета</a> 
+        <a href="kontakt.html">Контакт</a>
+      </div>
+
+
+<div class="header">
+  <h2>Блог</h2>
+</div>
+<p id="tekst">На ова место ги чекам вашите интереси и коментари.
+     Може да предложите и нова тема за дебата.
+</p>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 id="text1">Мода и моден дизајн</h2>
+      <img  src="blog1.jpg" class="fakeimg" style="height:400px;">
+      <span class="textarea" id="input1" role="textbox" contenteditable></span>
+      <input type="submit"  value="Submit" onclick="publish(1)">
+      <div id="div1">
+        <p id="p1"></p>
+        <p id="p1_1"></p>
+      </div>
+      
+    </div>
+    <div class="card">
+        <h2 id="text2">Декорации</h2>
+        <img src="blog2.jpg" class="fakeimg" style="height:400px;">
+        <span class="textarea" id="input2"role="textbox" contenteditable></span>
+        <input type="submit"  value="Submit" onclick="publish(2)">
+        <div id="div2">
+          <p id="p2"></p>
+          <p id="p2_1"></p>
+        </div>
+        
+    </div>
+    <div class="card">
+        <h2 id="text3">Храна и пијалоци</h2>
+        <img src="blog3.jpg" class="fakeimg" style="height:400px;">
+        <span class="textarea" id="input3"role="textbox" contenteditable></span>
+        <input type="submit"  value="Submit" onclick="publish(3)">
+      <div id="div3">
+        <p id="p3"></p>
+        <p id="p3_1"></p>
+      </div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Напиши текст за една од следните теми:</h2>
+      <form action="#text1">
+        <button class="button"><span>Мода и моден дизајн </span></button>
+      </form>
+      <form action="#text2">
+        <button class="button"><span>Декорации </span></button>
+      </form>
+      <form action="#text3">
+        <button class="button"><span>Храна и пијалоци </span></button>
+      </form>
+    </div>
+    <div class="card">
+      <h3>Предложи нова тема</h3>
+      <input class="tema" type="text">
+    </div>
+    <div class="card" id="follow">
+      <h3>Заследи ме</h3>
+      <p>Во делот за контакт имаш можност да ме заследиш на некоја од социјалните мрежи, да ми испратиш е-маил или пак да се јавиш на мојот телефонски број за да воспоставиме контакт.
+         Те чекам </p>
+      <img id="blog4" src="blog4.jpg" style="width:100%; height:100%; visibility: hidden;">
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Milena's blog</h2>
+</div>
+
+</body>
+</html>
+<script>
+    function publish(i)
+    {
+        var span=document.getElementById("input"+i);
+        var text=span.innerText;
+
+        var date = new Date();
+        var current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds()+" "+date.getDay()+"."+date.getMonth()+"."+date.getFullYear();
+        var div=document.getElementById("div"+i);
+        var br = document.createElement("br");
+        var br1 = document.createElement("br");
+        var br2 = document.createElement("br");
+        var br3 = document.createElement("br");
+        if(text!=''){
+            
+          div.append(text);
+          div.append(br);
+          div.append(br1);
+          div.append(current_time);
+          div.append(br2);
+          div.append(br3);
+             
+        }
+        span.innerText=''; 
+    }
+    var f=document.getElementById("follow");
+    f.addEventListener("mouseover",fja,false);
+    f.addEventListener("mouseout",fja1,false);
+    var img=document.getElementById("blog4");
+    function fja()
+    {
+        img.style.visibility="visible";
+    }
+    function fja1()
+    {
+        img.style.visibility="hidden";
+    }
+
+   
+
+</script>

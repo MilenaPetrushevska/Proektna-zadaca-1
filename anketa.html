@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>Анкета</title>
+<link rel = "stylesheet" href ="anketa.css">
+</head>
+
+<body>
+    <div class="navbar">
+      <a href="home.html">Дома</a>
+        <a href="bio.html">За мене</a>
+        <div class="dropdown">
+          <button class="dropbtn">Интереси 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="moda.html">Мода и моден дизајн</a>
+            <a href="dek.html">Декорации</a>
+            <a href="hrana.html">Храна и пијалоци</a>
+          </div>
+        </div>
+        <a href="galerija.html">Галерија</a>
+        <a href="blog.html">Блог</a>
+        <a href="anketa.html">Анкета</a> 
+        <a href="kontakt.html">Контакт</a>
+      </div>
+
+      <h2>Анкета</h2>
+      
+  <form action="#">
+      <fieldset>
+      <p>
+        <h3>Пол:</h3>
+        <input type="radio"  id="maski" name="pol" value="машки"required>
+        <label for="maski" > машки</label>
+        <br>
+        <input type="radio"id="zenski" name="pol" value="женски">
+        <label for="zneski">женски</label> 
+      </p>  
+      </fieldset>
+      <fieldset>
+      <p>
+        <h3>Возраст:</h3>
+        <input type="radio"  id="1" name="god" value="1"required>
+        <label for="1" > 15-20</label>
+        <br>
+        <input type="radio"id="2" name="god" value="2">
+        <label for="2">20-24</label> 
+        <br>
+        <input type="radio"id="3" name="god" value="3">
+        <label for="3">25-29</label> 
+        <br>
+        <input type="radio"id="4" name="god" value="4">
+        <label for="4">над 30</label> 
+      </p>  
+      </fieldset>
+      <fieldset>
+      <p>
+        <h3>Моментално сум:</h3>
+        <input type="radio"  id="maski" name="pr" value="uc"required>
+        <label for="uc" > ученик</label>
+        <br>
+        <input type="radio"id="zenski" name="pr" value="st">
+        <label for="st">студент</label> 
+        <br>
+        <input type="radio"id="zenski" name="pr" value="женски">
+        <label for="zneski">вработен</label> 
+        <br>
+        <input type="radio"id="zenski" name="pr" value="vr">
+        <label for="vr">невработен</label> 
+        <br>
+        <input type="radio"id="zenski" name="pr" value="dr">
+        <label for="dr">друго</label> 
+      </p>  
+      </fieldset>
+      <fieldset>
+      <p>
+        <h3>Оценка на веб страната:</h3>
+        <ol>
+          <li>Генерална оцена</li>
+          <input type="radio"  id="maski" name="oc" value="ne" required>
+          <label for="ne" > недоволно добро</label>
+          <br>
+          <input type="radio"id="zenski" name="oc" value="db">
+          <label for="db">добро</label> <br>
+          <input type="radio"  id="maski" name="oc" value="od">
+          <label for="od" > одлично</label>
+          <li>Постоење на информации кои ги очекувавте</li>
+          <input type="radio"  id="maski" name="inf" value="ne"required>
+          <label for="ne" > недоволно добро</label>
+          <br>
+          <input type="radio"id="zenski" name="inf" value="db">
+          <label for="db">добро</label> <br>
+          <input type="radio"  id="maski" name="inf" value="od">
+          <label for="od" > одлично</label>
+          <li>Едноставност за користење</li>
+          <input type="radio"  id="maski" name="ed" value="da"required>
+          <label for="da" > да</label>
+          <br>
+          <input type="radio"id="zenski" name="ed" value="ne">
+          <label for="ne">не</label> 
+        </ol>   
+      </p>  
+      </fieldset>
+      <fieldset>
+      <p>
+        <h3>Кои информации од сајтот најмногу ви користеле лично на вас:</h3>
+        <input type="checkbox" id="moda" name="inf" value="moda">
+        <label for="moda"> Мода</label><br>
+        <input type="checkbox" id="md" name="inf" value="md">
+        <label for="md"> Модни дизајнери</label><br>
+        <input type="checkbox" id="dekoracii" name="inf" value="dekoracii">
+        <label for="dekoracii"> Декорации</label><br>
+        <input type="checkbox" id="hr" name="inf" value="hr">
+        <label for="hr"> Храна</label><br>
+        <input type="checkbox" id="ni" name="inf" value="ni">
+        <label for="ni"> Ниту едно од наведените</label><br>
+      </p>  
+      </fieldset>
+      <fieldset>
+      <p class="text">
+          <label for="text"><h3>Дополнителни информации кои би ви користеле и би сакале да ги додадеме а ги нема опфатено сајтот:</h3></label>
+          <input type="text" id="text" name="text"><br><br>
+      </p>  
+      </fieldset>
+      <input type="submit" value="Submit">
+  </form>  
+</body>
+</html>
+

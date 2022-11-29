@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>Галерија</title>
+<link rel = "stylesheet" href ="galerija.css">
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="home.html">Дома</a>
+      <a href="bio.html">За мене</a>
+      <div class="dropdown">
+        <button class="dropbtn">Интереси 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="moda.html">Мода и моден дизајн</a>
+          <a href="dek.html">Декорации</a>
+          <a href="hrana.html">Храна и пијалоци</a>
+        </div>
+      </div>
+      <a href="galerija.html">Галерија</a>
+      <a href="blog.html">Блог</a>
+      <a href="anketa.html">Анкета</a> 
+      <a href="kontakt.html">Контакт</a>
+    </div>
+
+<div class="row"> 
+  <div class="column">
+    <img class="slika" src="g1.jpg" >
+    <div>
+      <button type="button" id="g1" onclick="fja(0)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m1" onclick="fja(1)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b1" onclick="fja(2)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text1" onkeydown="com(this,1)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br0">0</td>
+          <td class="br2"id="br1">0</td>
+          <td class="br3"id="br2">0</td>
+        </tr>
+      </table>
+      <p id="1" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    
+    <img class="slika" src="g2.jpg" >
+    <div>
+      <button type="button" id="g2"onclick="fja(3)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m2"onclick="fja(4)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b2"onclick="fja(5)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text2"onkeydown="com(this,2)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br3">0</td>
+          <td class="br2"id="br4">0</td>
+          <td class="br3"id="br5">0</td>
+        </tr>
+      </table>
+      <p id="2" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+
+    <img class="slika" src="g3.jpg" >
+    <div>
+      <button type="button" id="g3"onclick="fja(6)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m3"onclick="fja(7)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b3"onclick="fja(8)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text3"onkeydown="com(this,3)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br6">0</td>
+          <td class="br2"id="br7">0</td>
+          <td class="br3"id="br8">0</td>
+        </tr>
+      </table>
+      <p id="3" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+
+    <img class="slika" src="g4.jpg" >
+    <div>
+      <button type="button" id="g4"onclick="fja(9)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m4"onclick="fja(10)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b4"onclick="fja(11)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text4"onkeydown="com(this,4)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br9">0</td>
+          <td class="br2"id="br10">0</td>
+          <td class="br3"id="br11">0</td>
+        </tr>
+      </table>
+      <p id="4" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" src="g19.jpg"  >
+    <div>
+      <button type="button" id="g5"onclick="fja(12)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m5"onclick="fja(13)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b5"onclick="fja(14)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text"id="text5"onkeydown="com(this,5)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br12">0</td>
+          <td class="br2"id="br13">0</td>
+          <td class="br3"id="br14">0</td>
+        </tr>
+      </table>
+      <p id="5" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+  </div>
+  <div class="column">
+    <img class="slika" src="g5.jpg"  >
+    <div>
+      <button type="button" id="g6" onclick="fja(15)">
+        <img class="stiker" src="heart.jpg" >
+      </button>
+      <button type="button" id="m6"onclick="fja(16)" >
+        <img class="stiker" src="hm.jpg" >
+      </button>
+      <button type="button" id="b6"onclick="fja(17)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text6" onkeydown="com(this,6)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br15">0</td>
+          <td class="br2"id="br16">0</td>
+          <td class="br3"id="br17">0</td>
+        </tr>
+      </table>
+      <p id="6" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" src="g6.jpg"  >
+    <div>
+      <button type="button" id="g7"onclick="fja(18)" >
+        <img class="stiker" src="heart.jpg" >
+      </button>
+      <button type="button" id="m7" onclick="fja(19)" >
+        <img class="stiker" src="hm.jpg">
+      </button>
+      <button type="button" id="b7"onclick="fja(20)" >
+        <img class="stiker" src="ew.jpg" >
+      </button>
+      <input type="text" id="text7" onkeydown="com(this,7)"placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br18">0</td>
+          <td class="br2"id="br19">0</td>
+          <td class="br3"id="br20">0</td>
+        </tr>
+      </table>
+      <p id="7" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" src="g20.jpg"  >
+    <div>
+      <button type="button" id="g8"onclick="fja(21)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m8"onclick="fja(22)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b8"onclick="fja(23)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text8" onkeydown="com(this,8)"placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br21">0</td>
+          <td class="br2"id="br22">0</td>
+          <td class="br3"id="br23">0</td>
+        </tr>
+      </table>
+      <p id="8" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" src="g8.jpg"  >
+    <div>
+      <button type="button" id="g9"onclick="fja(24)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m9"onclick="fja(25)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b9"onclick="fja(26)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text9"onkeydown="com(this,9)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br24">0</td>
+          <td class="br2"id="br25">0</td>
+          <td class="br3"id="br26">0</td>
+        </tr>
+      </table>
+      <p id="9" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" src="g9.jpg"  >
+    <div>
+      <button type="button" id="g10"onclick="fja(27)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m10"onclick="fja(28)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b10"onclick="fja(29)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text10"onkeydown="com(this,10)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br27">0</td>
+          <td class="br2"id="br28">0</td>
+          <td class="br3"id="br29">0</td>
+        </tr>
+      </table>
+      <p id="10" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+  </div>  
+  <div class="column">
+    <img class="slika" src="g7.jpg"  >
+    <div>
+      <button type="button" id="g11"onclick="fja(30)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m11"onclick="fja(31)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b11"onclick="fja(32)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text11"onkeydown="com(this,11)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br30">0</td>
+          <td class="br2"id="br31">0</td>
+          <td class="br3"id="br32">0</td>
+        </tr>
+      </table>
+      <p id="11" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" src="g11.jpg"  >
+    <div>
+      <button type="button" id="g12"onclick="fja(33)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m12"onclick="fja(34)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b12"onclick="fja(35)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text12"onkeydown="com(this,12)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br33">0</td>
+          <td class="br2"id="br34">0</td>
+          <td class="br3"id="br35">0</td>
+        </tr>
+      </table>
+      <p id="12" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" src="g12.jpg"  >
+    <div>
+      <button type="button" id="g13"onclick="fja(36)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m13"onclick="fja(37)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b13"onclick="fja(38)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text13"onkeydown="com(this,13)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br36">0</td>
+          <td class="br2"id="br37">0</td>
+          <td class="br3"id="br38">0</td>
+        </tr>
+      </table>
+      <p id="13" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" src="g13.jpg"  >
+    <div>
+      <button type="button" id="g14"onclick="fja(39)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m14"onclick="fja(40)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b14"onclick="fja(41)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text14"onkeydown="com(this,14)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br39">0</td>
+          <td class="br2"id="br40">0</td>
+          <td class="br3"id="br41">0</td>
+        </tr>
+      </table>
+      <p id="14" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" src="g14.jpg"  >
+    <div>
+      <button type="button" id="g15"onclick="fja(42)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m15"onclick="fja(43)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b15"onclick="fja(44)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text15"onkeydown="com(this,15)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br42">0</td>
+          <td class="br2"id="br43">0</td>
+          <td class="br3"id="br44">0</td>
+        </tr>
+      </table>
+      <p id="15" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+  </div>
+  <div class="column">
+    <img class="slika" src="g15.jpg"  >
+    <div>
+      <button type="button" id="g16"onclick="fja(45)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m16"onclick="fja(46)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b16"onclick="fja(47)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text16"onkeydown="com(this,16)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br45">0</td>
+          <td class="br2"id="br46">0</td>
+          <td class="br3"id="br47">0</td>
+        </tr>
+      </table>
+      <p id="16" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" src="g16.jpg"  >
+    <div>
+      <button type="button" id="g17" onclick="fja(48)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m17"onclick="fja(49)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b17"onclick="fja(50)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text17"onkeydown="com(this,17)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1" id="br48">0</td>
+          <td class="br2" id="br49">0</td>
+          <td class="br3" id="br50">0</td>
+        </tr>
+      </table>
+      <p id="17" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" src="g17.jpg"  >
+    <div>
+      <button type="button" id="g18"onclick="fja(51)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m18"onclick="fja(52)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b18"onclick="fja(53)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text18"onkeydown="com(this,18)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br51">0</td>
+          <td class="br2"id="br52">0</td>
+          <td class="br3"id="br53">0</td>
+        </tr>
+      </table>
+      <p id="18" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" src="g18.jpg"  >
+    <div>
+      <button type="button" id="g19"onclick="fja(54)">
+        <img class="stiker" src="heart.jpg"  >
+      </button>
+      <button type="button" id="m19"onclick="fja(55)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b19"onclick="fja(56)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text"id="text19"onkeydown="com(this,19)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1"id="br54">0</td>
+          <td class="br2"id="br55">0</td>
+          <td class="br3"id="br56">0</td>
+        </tr>
+      </table>
+      <p id="19" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+    <img class="slika" id="slika20"src="g10.jpg"  >
+    <div>
+      <button type="button" id="g20"onclick="fja(57)">
+        <img class="stiker"  src="heart.jpg"  >
+      </button>
+      <button type="button" id="m20"onclick="fja(58)">
+        <img class="stiker" src="hm.jpg"  >
+      </button>
+      <button type="button" id="b20"onclick="fja(59)">
+        <img class="stiker" src="ew.jpg"  >
+      </button>
+      <input type="text" id="text20"onkeydown="com(this,20)" placeholder="Коментар...">
+      <table>
+        <tr>
+          <td class="br1" id="br57">0</td>
+          <td class="br2" id="br58">0</td>
+          <td class="br3" id="br59">0</td>
+        </tr>
+      </table>
+      <p id="20" style="font-size:13px; color:gray; text-align: left;"></p>
+    </div>
+  </div>
+</div>
+
+<script src="galerija1.js"></script>
+</body>
+</html>
+
+
+    
