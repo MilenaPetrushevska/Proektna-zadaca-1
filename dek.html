@@ -4,6 +4,11 @@
 <meta charset = "utf-8">
 <title>Украси и декорации</title>
 <link rel = "stylesheet" href ="dek.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"> </script>
 </head>
 
 <body>
@@ -24,6 +29,9 @@
         <a href="blog.html">Блог</a>
         <a href="anketa.html">Анкета</a> 
         <a href="kontakt.html">Контакт</a>
+        <a href="todo1.html">To-Do List</a>
+        <a href="kviz.html">Квиз</a>
+        <a href="http://localhost:3001/ ">Тic-Tac-Toe</a>
       </div>
   
     <br>
@@ -67,7 +75,7 @@
     </ol>
     
             
-    <img src="slika7.jpg" onmouseover="newImg(this)" onmouseout="oldImg(this)">
+    <img src="slika7.jpg" id="slika7">
     
     
     <p class="veligden">Сето ова ќе го најдете со моја препорака на сајтот подоле: </p>
@@ -77,11 +85,17 @@
     
 </body>
 </html>
-<script>
+<script>/*
   function newImg(e){
     e.src = "slika7_1.jpg"
   }
   function oldImg(e){
     e.src = "slika7.jpg"
-  }
+  }*/
+  $("#slika7").mouseover(function () {
+    $(this).attr("src", "slika7_1.jpg");
+  });
+  $("#slika7").mouseout(function () {
+    $(this).attr("src", "slika7.jpg");
+  });
 </script>

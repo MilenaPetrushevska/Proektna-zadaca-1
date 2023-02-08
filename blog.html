@@ -5,6 +5,11 @@
 <title>Блог</title>
 <meta name="viewport" content="width=device-width">
 <link rel = "stylesheet" href ="blog.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"> </script>
 </head>
 <body>
     <div class="navbar">
@@ -24,6 +29,9 @@
         <a href="blog.html">Блог</a>
         <a href="anketa.html">Анкета</a> 
         <a href="kontakt.html">Контакт</a>
+        <a href="todo1.html">To-Do List</a>
+        <a href="kviz.html">Квиз</a>
+        <a href="http://localhost:3001/ ">Тic-Tac-Toe</a>
       </div>
 
 
@@ -39,7 +47,7 @@
       <h2 id="text1">Мода и моден дизајн</h2>
       <img  src="blog1.jpg" class="fakeimg" style="height:400px;">
       <span class="textarea" id="input1" role="textbox" contenteditable></span>
-      <input type="submit"  value="Submit" onclick="publish(1)">
+      <input type="submit"  value="Submit" id="publish1">
       <div id="div1">
         <p id="p1"></p>
         <p id="p1_1"></p>
@@ -50,7 +58,7 @@
         <h2 id="text2">Декорации</h2>
         <img src="blog2.jpg" class="fakeimg" style="height:400px;">
         <span class="textarea" id="input2"role="textbox" contenteditable></span>
-        <input type="submit"  value="Submit" onclick="publish(2)">
+        <input type="submit"  value="Submit" id="publish2">
         <div id="div2">
           <p id="p2"></p>
           <p id="p2_1"></p>
@@ -61,7 +69,7 @@
         <h2 id="text3">Храна и пијалоци</h2>
         <img src="blog3.jpg" class="fakeimg" style="height:400px;">
         <span class="textarea" id="input3"role="textbox" contenteditable></span>
-        <input type="submit"  value="Submit" onclick="publish(3)">
+        <input type="submit"  value="Submit" id="publish3">
       <div id="div3">
         <p id="p3"></p>
         <p id="p3_1"></p>
@@ -100,7 +108,7 @@
 
 </body>
 </html>
-<script>
+<script>/*
     function publish(i)
     {
         var span=document.getElementById("input"+i);
@@ -137,7 +145,84 @@
     {
         img.style.visibility="hidden";
     }
-
-   
+*/
+  $(document).ready(function () {
+    $("#follow").mouseover(function () {
+      $("#blog4").css("visibility", "visible");
+    });
+    $("#follow").mouseout(function () {
+      $("#blog4").css("visibility", "hidden");
+    });
+    $("#publish1").click(function () {
+      var text = $("#input1").text();
+      var date = new Date();
+      var current_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + date.getDay() + "." + date.getMonth() + "." + date.getFullYear();
+      if (text != '') {
+        $("#div1").append(text);
+        $("#div1").append("<br>");
+        $("#div1").append("<br>");
+        $("#div1").append(current_time);
+        $("#div1").append("<br>");
+        $("#div1").append("<br>");
+      }
+      $("#input1").text('');
+    });
+    $("#publish2").click(function () {
+      var text = $("#input2").text();
+      var date = new Date();
+      var current_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + date.getDay() + "." + date.getMonth() + "." + date.getFullYear();
+      if (text != '') {
+        $("#div2").append(text);
+        $("#div2").append("<br>");
+        $("#div2").append("<br>");
+        $("#div2").append(current_time);
+        $("#div2").append("<br>");
+        $("#div2").append("<br>");
+      }
+      $("#input2").text('');
+    });
+    $("#publish3").click(function () {
+      var text = $("#input3").text();
+      var date = new Date();
+      var current_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + date.getDay() + "." + date.getMonth() + "." + date.getFullYear();
+      if (text != '') {
+        $("#div3").append(text);
+        $("#div3").append("<br>");
+        $("#div3").append("<br>");
+        $("#div3").append(current_time);
+        $("#div3").append("<br>");
+        $("#div3").append("<br>");
+      }
+      $("#input3").text('');
+    });
+    $("#publish4").click(function () {
+      var text = $("#input4").text();
+      var date = new Date();
+      var current_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + date.getDay() + "." + date.getMonth() + "." + date.getFullYear();
+      if (text != '') {
+        $("#div4").append(text);
+        $("#div4").append("<br>");
+        $("#div4").append("<br>");
+        $("#div4").append(current_time);
+        $("#div4").append("<br>");
+        $("#div4").append("<br>");
+      }
+      $("#input4").text('');
+    });
+    $("#publish5").click(function () {
+      var text = $("#input5").text();
+      var date = new Date();
+      var current_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + date.getDay() + "." + date.getMonth() + "." + date.getFullYear();
+      if (text != '') {
+        $("#div5").append(text);
+        $("#div5").append("<br>");
+        $("#div5").append("<br>");
+        $("#div5").append(current_time);
+        $("#div5").append("<br>");
+        $("#div5").append("<br>");
+        }
+      $("#input5").text('');
+    });
+  })
 
 </script>

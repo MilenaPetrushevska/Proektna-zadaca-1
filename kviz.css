@@ -1,0 +1,104 @@
+.navbar {
+    overflow: hidden;
+    background-color: rgb(76, 170, 87);
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: green;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: green;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body,
+html {
+    margin: 0;
+}
+
+body {
+    background-image: url(slika3.jpg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: green;
+}
+#kviz:link {
+    color: red;
+}
+
+#kviz:visited {
+    color: black;
+}
+
+#kviz:hover {
+    color: hotpink;
+}
+
+#kviz:active {
+    color: blue;
+}
+#divkviz{
+    text-align: center;
+    padding: 10px;
+}
+#cel
+{
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    margin-top: 150px;
+}

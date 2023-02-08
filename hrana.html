@@ -4,6 +4,11 @@
 <meta charset = "utf-8">
 <title>Храна и пијалоци</title>
 <link rel = "stylesheet" href ="hrana.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"> </script>
 </head>
 
 <body>
@@ -24,6 +29,9 @@
         <a href="blog.html">Блог</a>
         <a href="anketa.html">Анкета</a> 
         <a href="kontakt.html">Контакт</a>
+        <a href="todo1.html">To-Do List</a>
+        <a href="kviz.html">Квиз</a>
+        <a href="http://localhost:3001/ ">Тic-Tac-Toe</a>
       </div>
   
     <br>
@@ -65,18 +73,24 @@
          </p>
     <a href="https://www.lasrecetascocina.com/mk/helado-de-pistacho-casero/" class="text1">Погледнете тука</a>
     <br>
-    <img class="slika" src="recept.jpg" onmouseover="newImg(this)" onmouseout="oldImg(this)"alt="sladoled fstaci">
+    <img class="slika" src="recept.jpg" id="recept"alt="sladoled fstaci">
     <h2>Уживајтe!</h2>
     <p class="text1"><u><em>Следи утре: Вегетаријанско макало</em></u></p>
 </body>
 </html>
 <script>
-
+/*
   function newImg(e){
     e.src = "slika8.jpg"
   }
   function oldImg(e){
     e.src = "recept.jpg"
   }
-
+*/
+$("#recept").mouseover(function () {
+  $(this).attr("src", "slika8.jpg");
+});
+$("#recept").mouseout(function () {
+  $(this).attr("src", "recept.jpg");
+});
 </script>
